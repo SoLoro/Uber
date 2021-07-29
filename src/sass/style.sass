@@ -170,6 +170,21 @@ nav
     letter-spacing: normal
     text-align: center
     color: #222222
+    &-info
+        margin-top: 5px 
+        font-size: 17px
+        font-weight: normal
+        font-stretch: normal
+        font-style: normal
+        line-height: 1.24
+        letter-spacing: normal
+        text-align: center
+        color: #222222
+        &_crew
+            color: #ffffff
+            transform: translateY(56px)
+        &_say
+            color: #ffffff
 .pool
     min-height: 900px
     padding: 121px 0 65px 0
@@ -207,3 +222,69 @@ nav
     display: flex
     justify-content: center
     align-items: center
+
+.mobile
+	min-height: 864px
+	background-color: #1eacc7
+	padding: 48px 0 80px 0
+	.row
+		margin-top: 32px
+	&-stand
+		position: relative
+		width: 320px
+		height: 280px
+		margin: 0 auto
+		background: url(../img/app1.jpg) center (center / cover) no-repeat
+		margin-bottom: 19px
+		&_app2
+			background: url(../img/app2.jpg) center (center / cover) no-repeat
+		&_app3
+			background: url(../img/app3.jpg) center (center / cover) no-repeat
+		&_app4
+			background: url(../img/app4.jpg) center (center / cover) no-repeat
+		&_app5
+			background: url(../img/app5.jpg) center (center / cover) no-repeat
+		&_app6
+			background: url(../img/app6.jpg) center (center / cover) no-repeat
+		&__title
+			padding-top: 91px
+			text-transform: uppercase
+			font-size: 24px
+			font-weight: normal
+			font-stretch: normal
+			font-style: normal
+			line-height: 1.29
+			letter-spacing: normal
+			text-align: center
+			color: #ffffff
+		&__plus
+			display: flex
+			justify-content: center
+			align-items: center
+			position: absolute
+			width: 26px
+			height: 26px
+			background-color: #000000
+			margin: 0 auto
+			border-radius: 100% 
+			bottom: 35px
+			left: 50%
+			transform: translateX(-50%)
+			cursor: pointer
+			&::after
+				display: block
+				position: absolute
+				content: ''
+				width: 2px
+				height: 14px
+				background-color: #1eacc7
+			&::before
+				display: block
+				content: ''
+				width: 14px
+				height: 2px
+				background-color: #1eacc7
+			&:hover
+				&::after,&::before
+					background-color: #ff5656
+					transition: 0.3s all
