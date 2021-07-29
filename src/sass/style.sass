@@ -1,6 +1,7 @@
 *
     font-family: 'Roboto',sans-serif
-
+$one-color: #1eacc7
+$two-color: #ff5656
 nav
     position: fixed
     width: 100%
@@ -79,7 +80,7 @@ nav
         height: 46px
         box-shadow: inset 0px -3px 0 0 rgba(0, 0, 0, 0.12)
         border: none
-        background-image: linear-gradient(to top, #1eacc7, #4ce2ff)
+        background-image: linear-gradient(to top, $one-color, #4ce2ff)
         cursor: pointer
         text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.21)
         font-size: 14px
@@ -132,7 +133,7 @@ nav
         height: 63px
         box-shadow: inset 0px -4px 0 0 rgba(0, 0, 0, 0.12)
         border: none
-        background-image: linear-gradient(to top, #1eacc7, #4ce2ff)
+        background-image: linear-gradient(to top, $one-color, #4ce2ff)
         cursor: pointer
         text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.21)
         font-size: 18px
@@ -201,7 +202,7 @@ nav
             justify-content: center
             align-items: center
             margin-right: 26px
-            background-color: #1eacc7
+            background-color: $one-color
         &__descr
             width: 341px
         &__subtitle
@@ -211,7 +212,7 @@ nav
             font-style: normal
             line-height: 1.4
             letter-spacing: normal
-            color: #1eacc7
+            color: $one-color
         &__info
             font-size: 15px
             font-weight: normal
@@ -225,7 +226,7 @@ nav
 
 .mobile
 	min-height: 864px
-	background-color: #1eacc7
+	background-color: $one-color
 	padding: 48px 0 80px 0
 	.row
 		margin-top: 32px
@@ -277,14 +278,14 @@ nav
 				content: ''
 				width: 2px
 				height: 14px
-				background-color: #1eacc7
+				background-color: $one-color
 			&::before
 				display: block
 				content: ''
 				width: 14px
 				height: 2px
-				background-color: #1eacc7
+				background-color: $one-color
 			&:hover
 				&::after,&::before
-					background-color: #ff5656
+					background-color: $two-color
 					transition: 0.3s all
