@@ -2,6 +2,10 @@
     font-family: 'Roboto',sans-serif
 $one-color: #1eacc7
 $two-color: #ff5656
+=btn_novell
+	&:hover
+		background-image: none
+		background-color: $one-color
 nav
     position: fixed
     width: 100%
@@ -91,6 +95,7 @@ nav
         text-align: center
         color: #ffffff
         text-transform: uppercase
+        +btn_novell
 
 .promo
     min-height: 800px
@@ -143,6 +148,7 @@ nav
         letter-spacing: normal
         text-align: center
         color: #ffffff
+        +btn_novell
 
 
 
