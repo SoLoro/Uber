@@ -320,4 +320,58 @@ nav
 		letter-spacing: normal
 		text-align: center
 		color: #222222
+
+.require
+	padding: 68px 0 84px 0
+	&-instructions
+		margin: 33px 0
+		&:nth-child(3+n)
+			margin-bottom: 0px
+		&__title
+			font-size: 22px
+			font-weight: normal
+			color: $one-color
+			vertical-align: top
+			&_request
+				color: $two-color
+		&__list
+			list-style-type: none
+			padding-left: 50px
+			margin-top: 22px
+			li
+				position: relative
+				font-size: 17px;
+				font-weight: 300;
+				font-stretch: normal;
+				font-style: normal;
+				
+				letter-spacing: normal;
+				text-align: left;
+				color: #222222;
+				margin-bottom: 10px
+				&::before
+					display: block
+					position: absolute
+					left: -32px
+					top: 3px
+					content: ' '
+					width: 21px
+					height: 20px
+					background: url('../icons/blue_mark_svg.svg') center center/cover no-repeat
+			&_request
+				li
+					&::before
+						background: url('../icons/red_mark_svg.svg') center center/cover no-repeat
+		&__descr
+			font-size: 17px
+			font-weight: 300
+			font-stretch: normal
+			font-style: normal
+			line-height: 1.41
+			letter-spacing: normal
+			text-align: left
+			font-size: 17px
+			font-weight: 300
+			font-weight: normal
+			color: $one-color
         
