@@ -398,5 +398,111 @@ nav
         font-style: normal
         letter-spacing: normal
         text-align: center
-        color: #1fbad6
+        color: $one-color
         
+
+.footer
+	padding: 14px 23px 39px 23px
+	a
+		&:hover     
+			text-decoration: none
+	&-divider
+		width: 299px
+		height: 4px
+		background-color: $one-color
+		margin: 0 auto
+	&-wrapper > div
+		width: 33%
+		&:nth-child(3)
+			display: flex 
+			justify-content: flex-end
+	&-wrapper
+		display: flex
+		position: relative
+		justify-content: space-between
+		align-items: flex-start
+		padding-top: 32px
+		&__social
+			width: 160px
+			display: flex
+			justify-content: space-between
+			&-item
+				width: 32px
+				height: 32px
+				display: flex
+				justify-content: center
+				align-items: center
+				margin: 0 4px
+				background-color: #070716
+				border-radius: 100%
+		
+		&__info
+			width: 390px
+			margin: 0 auto
+			&-main
+				display: flex
+				justify-content: space-between
+				padding: 0 10px
+				a 
+					color: #070716
+					text-transform: uppercase
+					font-weight: 300
+					font-size: 15px
+			&-services
+				display: flex 
+				justify-content: space-between 
+				margin-top: 10px 
+				a 
+					color: #999999 
+					font-size: 11px 
+					font-weight: 300 
+					text-transform: uppercase
+			&-g
+				display: none
+				&-coub
+					display: none
+					justify-content: space-between 
+					margin-top: 10px 
+					a 
+						color: #999999 
+						font-size: 11px 
+						font-weight: 300 
+						text-transform: uppercase
+				&-soub
+					display: none
+					justify-content: space-between 
+					margin-top: 10px 
+					a 
+						color: #999999 
+						font-size: 11px 
+						font-weight: 300 
+						text-transform: uppercase
+			&-language
+				display: block 
+				margin: 0 auto 
+				color: $one-color
+				font-size: 11px 
+				font-weight: 400 
+				margin-top: 19px
+				text-transform: uppercase 
+				text-align: center
+		
+		&__apps 
+			a
+				width: 93px
+				height: 27px
+				margin: 0
+				/** &:nth-child()  height: 30px  margin-right: 7px **/
+				&:nth-child(1)    
+					/** height: 40px **/
+					margin-right: 7px
+				&:nth-child(2) 
+					/** height: 40px    **/
+					margin-right: 7px
+			img
+				width: 93px
+				height: 27px
+				/** &:nth-child()  height: 30px    **/
+				 
+.xs-visible
+	display: none
