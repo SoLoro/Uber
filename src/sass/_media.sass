@@ -102,3 +102,102 @@
 				&-item
 					width: 29px 
 					height: 29px
+
+@media screen and ( max-width:767px)
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0,0,0, .8)
+        transition: 0.6s all
+        &_active
+            left: 0
+        &__item
+            padding-right: 0
+            border: none
+            margin: 10px 0
+            width: 100%
+            text-align: center
+        &__link	
+            font-size: 20px
+
+    .car
+        &-photo
+            width: 60%
+            height: 200px
+            margin-top: 85px
+
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 10px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #fff
+            &:nth-child(-n+2)
+                margin-bottom: 2px
+            transition: 0.5s all
+        &_active
+            span
+                &:nth-child(1)
+                    margin-bottom: -2px
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    margin-bottom: -2px
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .xs-hidden
+        display: none
+    .xs-visible
+        display: block
+        
+    .subheader
+        &-button
+            margin-top: 0px
+            margin: 0 auto
+        &-phone
+            margin-bottom: 5px
+            text-align: center
+    .promo
+        &-header
+            line-height: 45px
+        &-subheader
+            font-size: 30px
+    .footer
+        &-wrapper
+            padding-top: 20px
+            &__social
+                flex-direction: column
+                a
+                    &:nth-child(-n+4)
+                        margin-bottom: 2px
+            &__info
+                /** transform: translateX(-23%)	 **/
+            &__apps
+                width: 80%
+                height: 80%
+                transform: translateX(10px) translateY(20%)
+                img
+                    width: 65px
+                    height: 23px
+        &-wrapper > div
+            &:nth-child(1)
+                width: 20%
+            &:nth-child(2)
+                width: 60%
+            &:nth-child(3)
+                width: 20%
+                
